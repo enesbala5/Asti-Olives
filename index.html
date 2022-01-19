@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asti Olives - Italian Cuisine</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icons/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/icons/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/icons/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#e7e4df" />
+    <meta
+      name="msapplication-config"
+      content="/icons/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="grid">
+      <div class="items">
+        <a href="#">
+          <img
+            class="logo no_select"
+            src="icons/logo_black.svg"
+            alt="Asti Olives"
+          />
+        </a>
+        <div>
+          <button class="buttons" onclick=" window.open('404.html')">
+            <p class="link">Meso me shume</p>
+          </button>
+          <button
+            id="buttons_green"
+            class="buttons"
+            onclick=" window.open('menu.html')"
+          >
+            <p class="links bold">Lexo Menune</p>
+          </button>
+          <p id="subtext" class="serif italic align_center">
+            Na gjeni ne Bllok, Tirane. Perballe Artigianos.
+          </p>
+        </div>
+      </div>
+      <img
+        id="height100"
+        class="fit right_column"
+        src="images/hero.jpg"
+        alt="Pasta italiane"
+      />
+      <div class="box white right_column"></div>
+    </div>
+    <article class="main flex_center">
+      <section class="showcase">
+        <img
+          class="showcase_images fit"
+          src="images/chef.jpg"
+          alt="Ushqim nga nje chef"
+        />
+        <p class="bold">Gatim i Shijshem</p>
+        <p class="serif">
+          Restoranti Anti Olives ka fituar 3 Michelin Stars, i pari ne Shqiperi
+          me kete vleresim prestigjoz. Vizitoni per te provuar ushqim si askund
+          tjeter.
+        </p>
+      </section>
+      <section class="showcase">
+        <img class="showcase_images fit" src="images/chef2.jpg" alt="" />
+        <p class="bold">Perberes te Fresket</p>
+        <p class="serif">
+          Per te gatuar ushqim te mire, duhen dhe perberesit e tille. Anti
+          Olives furnizohet me ingrediente te fresket cdo mengjes, duke premtuar
+          shije ne cdo kafshate.
+        </p>
+      </section>
+      <section class="showcase">
+        <img class="showcase_images fit" src="images/service.jpg" alt="" />
+        <p class="bold">Sherbim Ekselent</p>
+        <p class="serif">
+          Anti Olives ofron sherbim sipas nje standardi internacional. Stafi yne
+          me pervoje, ju premton eksperiencen ideale per viziten tuaj se
+          rradhes.
+        </p>
+      </section>
+      <button class="lexomenu set_to_center" onclick="window.open('menu.html')">
+        <p class="align_center">Lexo Menune</p>
+      </button>
+    </article>
+    <div class="main reservation">
+      <h2 id="reservation" class="serif italic">Reservoni Tani</h2>
+      <form
+        action=""
+        name="Form"
+        onsubmit="return validateForm(); formSuccess()"
+      >
+        <section>
+          <input
+            type="text"
+            name="emri"
+            class="info mainLoginInput"
+            minlength="4"
+            maxlength="32"
+            placeholder="Emer Mbiemer"
+          />
+          <input
+            type="number"
+            required
+            class="info mainLoginInput"
+            minlength="0"
+            maxlength="2"
+            placeholder="Numri i personave"
+          />
+        </section>
+        <input
+          type="tel"
+          required
+          class="info mainLoginInput"
+          minlength="4"
+          maxlength="15"
+          placeholder="Numri i Telefonit"
+        />
+        <input
+          type="email"
+          class="info mainLoginInput"
+          minlength="4"
+          maxlength="255"
+          placeholder="Email (opsionale)"
+        />
+        <input
+          id="submit"
+          class="info mainsubmit"
+          type="submit"
+          value="Konfirmoni Rezervimin"
+        />
+      </form>
+    </div>
+    <div class="main_no_top">
+      <div class="flex flex_center">
+        <img
+          id="pjata_e_dites"
+          class="fit"
+          src="images/chef3.jpg"
+          alt="Ushqim"
+        />
+      </div>
+      <div class="smaller_vw">
+        <h2 class="serif daily_plates">Pjatat e Dites:</h2>
+        <ul class="small_top_margin">
+          <li>Bucatini Cacio e Pepe</li>
+          <li>Traditional Spaghetti all'Amatriciana</li>
+          <li>Tortellini Pesto Salad</li>
+          <li>Lasagne Alla Bolognese Saporite</li>
+          <li>Panna Cotta</li>
+        </ul>
+      </div>
+      <div class="big_top_margin flex flex_center">
+        <img
+          class="fit pjate_e_dites"
+          src="images/directions.jpg"
+          alt="Drejtime"
+        />
+      </div>
+      <div class="smaller_vw small_top_margin">
+        <h2 class="serif">Vendndodhja e Restorantit:</h2>
+        <p>Asti Olives e gjeni ne Bllok, Tirane.</p>
+        <dl>Perballe Artigianos.</dl>
+        <br />
+        <p class="italic">Presim t'ju shohim aty!</p>
+      </div>
+      <hr class="big_top_margin smaller_vw clear_float line" />
+      <div class="smaller_vw big_top_margin">
+        <div class="clear_float flex_column"></div>
+        <div class="align_top">
+          <table id="orari">
+            <tr>
+              <th>Dita</th>
+              <th>Orari</th>
+            </tr>
+            <tr>
+              <td>E Hene</td>
+              <td>9:00AM - 9:00PM</td>
+            </tr>
+            <tr>
+              <td>E Marte</td>
+              <td>9:00AM - 9:00PM</td>
+            </tr>
+            <tr>
+              <td>E Merkure</td>
+              <td>9:00AM - 9:00PM</td>
+            </tr>
+            <tr>
+              <td>E Enjte</td>
+              <td>9:00AM - 9:00PM</td>
+            </tr>
+            <tr>
+              <td>E Premte</td>
+              <td>9:00AM - 9:00PM</td>
+            </tr>
+            <tr>
+              <td>E Shtune</td>
+              <td>11:00AM - 7:00PM</td>
+            </tr>
+            <tr>
+              <td>E Diele</td>
+              <td>11:00AM - 7:00PM</td>
+            </tr>
+          </table>
+        </div>
+        <h2 id="oret_e_hapura" class="serif inline_block">Oret e Hapura</h2>
+        <p>Me disa perjashtime:</p>
+        <dl>*Nuk perfshihen festat kombetare</dl>
+        <dl>*Nuk perfshihen ditet nderkombetare te pushimit</dl>
+        <br />
+        <br />
+        <br />
+        <p class="italic">
+          Ju lutem na kontaktoni paraprakisht: +355 (68) 299 3019
+        </p>
+        <!-- <hr class="clear_float line" /> -->
+      </div>
+    </div>
+    <div class="footer_surround">
+      <div class="main max_top_margin footer clear_float">
+        <a href="#" id="logo_footer"
+          ><img src="icons/type_white.svg" alt="Logo"
+        /></a>
+        <a href="menu.html" class="footer_text left_align text_decoration_off"
+          >Menu</a
+        >
+        <a href="404.html" class="footer_text left_align text_decoration_off"
+          >Mesoni me Shume</a
+        >
+        <a
+          href="index.html#reservation"
+          class="footer_text left_align text_decoration_off"
+          >Reservoni</a
+        >
+        <a
+          href="presentation/presentation.pdf"
+          class="footer_text left_align text_decoration_off"
+          >Materiale Promocionale</a
+        >
+        <a
+          href="mailto:info@astiolives.com"
+          class="footer_text right_align text-decoration"
+          >info@astiolives.com</a
+        >
+        <a
+          href="tel:+355 (68) 299 3019"
+          class="footer_text right_align1 text-decoration"
+          >+355 (68) 299 3019</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
