@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Apfel Grotezk";
-  src: url("/fonts/ApfelGrotezk-Regular.woff2") format("woff2")
-    url("/fonts/ApfelGrotezk-Regular.woff") format("woff");
+  src: url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2")
+    url("../fonts/ApfelGrotezk-Regular.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Apfel Grotezk";
-  src: url("/fonts/ApfelGrotezk-Regular-Fett.woff2") format("woff2")
-    url("/fonts/ApfelGrotezk-Regular-Fett.woff") format("woff");
+  src: url("../fonts/ApfelGrotezk-Regular-Fett.woff2") format("woff2")
+    url("../fonts/ApfelGrotezk-Regular-Fett.woff") format("woff");
   font-weight: 600;
 }
 
